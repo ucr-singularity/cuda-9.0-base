@@ -17,7 +17,7 @@ From: nvidia/cuda:9.0-cudnn7-devel
         pkg-config python-pip python-dev software-properties-common
    
     # Add PPA for ffmpeg
-    add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
+    add-apt-repository -y ppa:jonathonf/ffmpeg-3
     apt-get update
     apt-get install -y ffmpeg
 
