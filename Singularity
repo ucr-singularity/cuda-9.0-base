@@ -37,7 +37,7 @@ From: nvidia/cuda:9.0-cudnn7-devel
     
     # Caffe dependencies  
     apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev \
-        libopencv-dev libhdf5-serial-dev protobuf-compiler
+        libhdf5-serial-dev protobuf-compiler
     apt-get install --no-install-recommends -y libboost-all-dev
     apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
@@ -47,19 +47,15 @@ From: nvidia/cuda:9.0-cudnn7-devel
     # Dense Flow dependencies
     apt-get install -y libzip-dev
 
-    # OpenCV build dependencies not already installed (though we do install 
-    # OpenCV itself below!)
-    apt-get install -y libopencv-dev checkinstall yasm libjpeg-dev \
+    # OpenCV build dependencies not already installed  
+    apt-get install -y checkinstall yasm libjpeg-dev libjpeg8-dev \
         libjasper-dev libavcodec-dev libavformat-dev libswscale-dev \
         libdc1394-22-dev libgstreamer0.10-dev \
         libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy \
         libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev \
         libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev \
-        libxvidcore-dev x264 v4l-utils
+        libxvidcore-dev x264 v4l-utils libgtk-3-dev
 
-    # OpenCV
-    apt-get install -y python2.7-opencv
-    
     # PIL (actually Pillow)
     pip install --no-cache-dir Pillow
     
