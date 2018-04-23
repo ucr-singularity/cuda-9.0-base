@@ -15,6 +15,7 @@ From: nvidia/cuda:9.0-cudnn7-devel
     apt-get install -y screen terminator tmux vim wget 
     apt-get install -y aptitude build-essential cmake g++ gfortran git \
         pkg-config python-pip python-dev software-properties-common
+    apt-get install -y unrar
    
     # Add PPA for ffmpeg
     add-apt-repository -y ppa:jonathonf/ffmpeg-3
