@@ -59,14 +59,14 @@ From: nvidia/cuda:9.0-cudnn7-devel
         libxvidcore-dev x264 v4l-utils libgtk-3-dev
 
     # simulation dependencies
-    apt-get install cmake cmake-curses-gui
-    apt-get install libxaw7-dev libxt-dev
-    apt-get install freeglut3-dev
-    apt-get install libfreetype6-dev
-    apt-get install libxrandr-dev
-    apt-get install --no-install-recommends libboost-all-dev
-    apt-get install zlib1g-dev libfreeimage-dev libois-dev libtinyxml-dev libzzip-dev libcppunit-dev libglew-dev libdevil-dev
-    apt-get install libeigen3-dev
+    apt-get install -y cmake cmake-curses-gui
+    apt-get install -y libxaw7-dev libxt-dev
+    apt-get install -y freeglut3-dev
+    apt-get install -y libfreetype6-dev
+    apt-get install -y libxrandr-dev
+    apt-get install -y --no-install-recommends libboost-all-dev
+    apt-get install -y zlib1g-dev libfreeimage-dev libois-dev libtinyxml-dev libzzip-dev libcppunit-dev libglew-dev libdevil-dev
+    apt-get install -y libeigen3-dev
 
     # PIL (actually Pillow)
     pip install --no-cache-dir Pillow
