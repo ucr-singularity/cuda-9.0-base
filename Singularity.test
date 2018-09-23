@@ -28,7 +28,7 @@ From: nvidia/cuda:9.0-cudnn7-devel
         libgraphviz-dev liblapack-dev swig libxft-dev libxml2-dev \
         libxslt-dev zlib1g-dev
  
-    # Python modules from system package manager
+    # Python modules from stem package manager
     apt-get install -y python-numpy python-scipy python-nose python-h5py \
         python-skimage python-matplotlib python-pandas python-sklearn \
         python-sympy python-virtualenv
@@ -87,7 +87,7 @@ From: nvidia/cuda:9.0-cudnn7-devel
     pip install --no-cache-dir statsmodels
     pip install --no-cache-dir restview
     pip install --no-cache-dir tinkerer
-    pip install --no-cache-dir Pweave
+    #pip install --no-cache-dir Pweave
     pip install --no-cache-dir numba
 
     # Gnuplot
