@@ -73,7 +73,9 @@ From: nvidia/cuda:9.0-cudnn7-devel
     
     # Jupyter and jupyterlab
     pip install --no-cache-dir jupyter
-    pip install --no-cache-dir jupyterlab
+    # Jupyterlab doesn't support Python 2.7 
+    #pip install --no-cache-dir jupyterlab
+    
 
     # Various useful Python packages
     pip install --no-cache-dir pygraphviz
