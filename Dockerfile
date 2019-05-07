@@ -51,18 +51,18 @@ RUN #pip install --no-cache-dir jupyterlab
 RUN # Various useful Python packages
 RUN pip install --no-cache-dir pygraphviz
 RUN #pip install --no-cache-dir networkx
-RUN pip install --no-cache-dir numexpr
-RUN pip install --no-cache-dir pymc
-RUN pip install --no-cache-dir patsy
-RUN pip install --no-cache-dir Cython
-RUN pip install --no-cache-dir statsmodels
-RUN pip install --no-cache-dir restview
-RUN pip install --no-cache-dir tinkerer
-RUN pip install --no-cache-dir Pweave
-RUN pip install --no-cache-dir numba
+RUN #pip install --no-cache-dir numexpr
+RUN #pip install --no-cache-dir pymc
+RUN #pip install --no-cache-dir patsy
+RUN #pip install --no-cache-dir Cython
+RUN #pip install --no-cache-dir statsmodels
+RUN #pip install --no-cache-dir restview
+RUN #pip install --no-cache-dir tinkerer
+RUN #pip install --no-cache-dir Pweave
+RUN #pip install --no-cache-dir numba
 RUN # Gnuplot
-RUN apt-get install -y gnuplot-x11
+RUN #apt-get install -y gnuplot-x11
 RUN # Clean up
-RUN apt-get -y autoremove
-RUN rm -rvf /var/lib/apt/lists/*
+RUN #apt-get -y autoremove
+RUN #rm -rvf /var/lib/apt/lists/*
 CMD exec /bin/bash "$@"
