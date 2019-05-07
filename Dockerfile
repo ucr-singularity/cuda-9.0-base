@@ -46,8 +46,8 @@ libxvidcore-dev x264 v4l-utils libgtk-3-dev
 RUN # PIL (actually Pillow)
 RUN pip install --no-cache-dir Pillow
 RUN # Jupyter and jupyterlab
-RUN pip install --no-cache-dir jupyter
-RUN pip install --no-cache-dir jupyterlab
+RUN #pip install --no-cache-dir jupyter
+RUN #pip install --no-cache-dir jupyterlab
 RUN # Various useful Python packages
 RUN pip install --no-cache-dir pygraphviz
 RUN pip install --no-cache-dir networkx
