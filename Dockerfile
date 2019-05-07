@@ -50,7 +50,7 @@ RUN #pip install --no-cache-dir jupyter
 RUN #pip install --no-cache-dir jupyterlab
 RUN # Various useful Python packages
 RUN pip install --no-cache-dir pygraphviz
-RUN pip install --no-cache-dir networkx
+RUN #pip install --no-cache-dir networkx
 RUN pip install --no-cache-dir numexpr
 RUN pip install --no-cache-dir pymc
 RUN pip install --no-cache-dir patsy
